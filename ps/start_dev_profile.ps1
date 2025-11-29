@@ -58,13 +58,13 @@ if (Test-Path $chromePath) {
 if (Test-Path $ideaPath) {
     Start-Process -FilePath $ideaPath
 } else {
-    Write-Host "IntelliJ IDEA не найдена по пути $ideaPath"
+    Write-Host "IntelliJ IDEA not found in the path. $ideaPath"
 }
 
 if (Test-Path $dockerPath) {
     Start-Process -FilePath $dockerPath
 } else {
-    Write-Host "Docker Desktop не найден по пути $dockerPath"
+    Write-Host "Docker Desktop not found in the path. $dockerPath"
 }
 
 
